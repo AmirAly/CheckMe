@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/option.js"></script>
+    <title>Lucky App</title>
+</head>
+<body class="container-fluid option">
+    <div class="clear"></div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10">
+            <div>
+                <img src="image/1.png" id="img" class="img-responsive img" onclick="showFileSelector()">
+                <p class="changetxt">Click to change</p>
+                <input type='file' id="uploadImg" accept="image/*" onchange="convertImgToBase64URL(event)" class="hide" />
+            </div>
+            <div class="clear"></div>
+            <div class="row leftdiv">
+                <div class=" col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <label class="txtcolor">First option text</label>
+                    </div>
+                    <div class="row">
+                        <input type="text" id="txtOption1" class="txtborder" />
+                    </div>
+                    <div class="clear2"></div>
+                    <div class="row">
+                        <label class="txtcolor">Second option text </label>
+                    </div>
+                    <div class="row">
+                        <input type="text" id="txtOption2" class="txtborder" />
+                    </div>
+                    <div class="clear"></div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 noPaddingLeft"><p class="txtcolor paddingcolor">Color1</p></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 "></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 ">
+                            <div class="firstColor" id="dvFirstColor" onclick="openColorPicker(1)"></div>
+                        </div>
+                    </div>
+                    <div class="sixColors row hide" id="pallet1">
+
+                        <div class="col-xs-2 no" onclick="changeColor('#1d1d1d',1)"><div class=" adjustColor blackColor no"></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#ffffff',1)"><div class=" adjustColor whiteColor no "></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#1976D2', 1)"><div class="adjustColor blueColor no "></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#F44336', 1)"><div class=" adjustColor redColor no"></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#009688', 1)"><div class="adjustColor greenColor no "></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#FFEB3B', 1)"><div class="adjustColor yellowColor no"></div></div>
+
+
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 noPaddingLeft"><p class="txtcolor paddingcolor">Color2</p></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 "></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 "><div class="secondColor" id="dvSecondColor" onclick="openColorPicker(2)"></div></div>
+                    </div>
+                    <div class="sixColors row hide" id="pallet2">
+
+                        <div class="col-xs-2 no" onclick="changeColor('#1d1d1d',2)"><div class=" adjustColor blackColor no"></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#ffffff',2)"><div class=" adjustColor whiteColor no "></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#1976D2', 2)"><div class="adjustColor blueColor no "></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#F44336', 2)"><div class=" adjustColor redColor no"></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#009688', 2)"><div class="adjustColor greenColor no "></div></div>
+                        <div class="col-xs-2 no" onclick="changeColor('#FFEB3B', 2)"><div class="adjustColor yellowColor no"></div></div>
+
+
+                    </div>
+                    <div class="clear"></div>
+                    <div class=" row randomtxt"><p>Check ratio (%)</p></div>
+                    <div class="row selector">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 opt_randomness _90"><p>90-10</p></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 _50 opt_randomness"><p>50-50</p></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 _40 opt_randomness"><p>40-60</p></div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class=" row randomtxt"><p>Animation</p></div>
+                    <div class="row selector">
+                        <div class="col-xs-offset-2 col-lg-4 col-md-4 col-sm-4 col-xs-4 opt_animation _Yes"><p>Yes</p></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 opt_animation _No"><p>No</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-1"></div>
+
+    </div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+    <div class="row footer">
+        <button onclick="save()" style="background-color:transparent" class="btn savetxt">Save & continue</button>
+    </div>
+</body>
+</html>

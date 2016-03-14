@@ -1,0 +1,258 @@
+﻿body {
+    text-align: center;
+    font-family: 'Century Gothic' !important;
+    /*align-content:center;*/
+}
+
+label {
+    font-size: 18px;
+}
+
+.impact {
+    font-family: Impact !important;
+}
+
+.img {
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear {
+    width: 100%;
+    height: 30px;
+}
+
+.clear2 {
+    width: 100%;
+    height: 15px;
+}
+
+.noPaddingLeft {
+    padding-left: 0px;
+}
+/*random page*/
+
+
+.Random .icon {
+    line-height: 1.2;
+    font-size: 35px;
+    color: #064165;
+}
+
+.Random .randomtxt {
+    color: #5cb485;
+}
+
+.Random p {
+    font-size: 20px;
+    color: #5cb485;
+    font-family: Century Gothic;
+}
+
+.Random .no {
+    position: relative;
+}
+
+.Random .red {
+    left: 50%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    top: 30px;
+    background-color: #f47473;
+}
+
+.Random .green {
+    left: 50%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #75f4b1;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    top: 30px;
+}
+
+.Random .start {
+    color: #6e6e6e;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+
+/*option page*/
+.option .changetxt {
+    color: #6d6d6d;
+    font-size: small;
+}
+
+.option .leftdiv {
+    text-align: left;
+    /*padding-left: 25px;*/
+}
+
+.option .txtcolor {
+    color: #6c957f;
+    padding-top: 5px;
+}
+
+.option .txtpadding {
+    padding-left: 10px;
+}
+
+.option .paddingcolor {
+    padding-bottom: 22px;
+    color: #6c957f;
+}
+
+.option .txtborder {
+    border: none;
+    border-bottom: 2px solid #6d6d6d;
+    width: 100%;
+}
+
+    .option .txtborder:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #6d6d6d;
+    }
+
+.option .firstColor {
+    float: right;
+    background-color: #ee1111;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.option .secondColor {
+    float: right;
+    background-color: #00a300;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.adjustColor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+}
+
+.option .no {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sixColors {
+    background-color: #eff4ff;
+    border: 1px solid #eee;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5%;
+}
+
+.blackColor {
+    background-color: #1d1d1d;
+}
+
+.whiteColor {
+    background-color: #fff;
+}
+
+.blueColor {
+    background-color: #1976D2;
+}
+
+.redColor {
+    background-color: #F44336;
+}
+
+.greenColor {
+    background-color: #009688;
+}
+
+.yellowColor {
+    background-color: #FFEB3B;
+}
+
+
+.option .footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #cfd8d8;
+}
+
+.option .savetxt {
+    color: #6d6d6d;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.option .randomtxt {
+    color: #6c957f;
+    font-family: monospace;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.option .selector {
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+
+.option .number1 {
+    color: #52d08d;
+}
+
+
+
+/*save page*/
+
+.save .wait {
+    color: #6c957f;
+    font-size: 50px;
+}
+
+.save .divyes {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #71bd91;
+    color: white;
+    font-size: 40px;
+    font-family: Century Gothic;
+}
+
+.save .yes {
+    bottom: 100px;
+    position: absolute;
+}
+
+.save .reset {
+    color: #6f6f6f;
+    font-family: Century Gothic;
+    font-size: 15px;
+}
