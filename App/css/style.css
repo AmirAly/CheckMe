@@ -56,31 +56,21 @@ label {
 }
 
 .Random .red {
-    left: 50%;
-    position: absolute;
-    padding: 0;
-    margin: 0;
+
     height: 60px;
     width: 60px;
     border-radius: 50%;
     margin-right: -50%;
     transform: translate(-50%,-50%);
-    top: 30px;
-    background-color: #f47473;
+   
 }
 
 .Random .green {
-    left: 50%;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    height: 60px;
+        height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: #75f4b1;
     margin-right: -50%;
     transform: translate(-50%,-50%);
-    top: 30px;
 }
 
 .Random .start {
