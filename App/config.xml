@@ -4,10 +4,10 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "co.deltacode.checker"
-        version   = "0.8.0"
+        version   = "1.0.0"
 		versionCode="325">
 
-	<name>The Checker</name>
+	<name>Random Selection</name>
 
 	<description>
 		Random checker selector.
