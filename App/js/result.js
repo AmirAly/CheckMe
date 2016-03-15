@@ -28,6 +28,7 @@ function initTest() {
     }
 }
 $(document).ready(start);
+meSpeak.loadConfig("mespeak_config.json"); meSpeak.loadVoice('en-us.json');
 function start() {
     var _timeout = 1000;
     if (settings.animation == 'Yes') {
@@ -44,6 +45,7 @@ function start() {
         var res = Math.floor((Math.random() * 100) + 1);
         $('#hResult').text(prop[res]);
         $('#hResult').css('font-size', "120%");
+        meSpeak.speak(prop[res]);
         if (res <= option1Ratio)
             $('.divyes').css('background-color', settings.color1);
         else
